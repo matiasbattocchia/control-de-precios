@@ -1,0 +1,14 @@
+.page-header
+  %h1 Precios relevados
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Supermercado
+      %th Sucursal
+      %th Producto
+      %th Precio
+      %th Fecha
+      %th IP
+  %tbody#prices
+    = render @prices

@@ -1,0 +1,7 @@
+.page-header
+  %h1 Precio relevado
+
+%p <b>Supermercado</b>: #{@price.company}
+%p <b>Sucursal</b>: #{@price.store}
+%p <b>Producto</b>: #{@price.product}
+%p <b>Precio</b>: #{number_to_currency @price.value}

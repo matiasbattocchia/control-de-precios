@@ -1,0 +1,10 @@
+.page-header
+  %h1 Precio codificado
+
+.row-fluid
+  .span3
+    %img{ src: "/encode.svg?price[company]=#{@price.company}&price[store]=#{@price.store}&price[product]=#{@price.product}&price[value]=#{@price.value}" }
+  .span9
+    %h1= number_to_currency @price.value
+    %h4= @price.product
+    %h4= "#{@price.company} #{@price.store}"

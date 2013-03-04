@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title Precios QR
+    = stylesheet_link_tag    'application', media: 'all'
+    = csrf_meta_tags
+
+  %body
+    .container-fluid
+      .row-fluid
+        .span12
+          = yield
+
+    = javascript_include_tag 'application'

@@ -1,0 +1,7 @@
+%tr.price{ data: { id: price.id } }
+  %td= price.company
+  %td= price.store
+  %td= price.product
+  %td= number_to_currency price.value
+  %td= price.id.generation_time.strftime("%d %b %y")
+  %td= price.ip
