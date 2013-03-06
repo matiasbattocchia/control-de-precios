@@ -1,8 +1,8 @@
-$(document).on('page:load', if ($('#prices')) poll());
+$(document).on('page:load', (function(){ if ($('#prices')) poll() }()));
 
 function request() {
   priceId = $('.price:first').data('id');
-  $.getScript('/prices.js?id=' + priceId);
+  $.getScript('/list.js?id=' + priceId);
   poll();
 }
 

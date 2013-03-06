@@ -1,5 +1,5 @@
 .page-header
-  %h1 Código QR
+  %h1 Nuevo código QR
 
 = simple_form_for @price, url: '/encode', html: { class: 'form-horizontal', method: 'get' } do |f|
   = f.input :company, label: 'Supermercado', collection: ['Carrefour', 'Coto', 'Jumbo', 'Wallmart', 'Vea']
@@ -7,4 +7,4 @@
   = f.input :product, label: 'Producto'
   = f.input :value, label: 'Precio'
   .form-actions
-    = f.button :submit, value: 'Generar', class: 'btn-primary'
+    = f.button :submit, value: 'Generar código QR', class: 'btn-primary'

@@ -1,6 +1,20 @@
 .page-header
   %h1 Precios relevados
 
+.hero-unit
+  .image
+    %img{ src: '/encode.svg' }
+
+  .text
+    %p
+      Los precios relevados son agregados a esta lista. La lista se actualiza automáticamente.
+      Para relevar el precio de un producto su correspondiente código QR debe ser escaneado.
+    %p
+      <i>El botón a continuación permite generar el código QR de un producto.</i>
+    
+    %br 
+    = link_to 'Nuevo código QR', '/new', class: 'btn btn-primary', target: '_blank'
+
 %table.table.table-striped
   %thead
     %tr

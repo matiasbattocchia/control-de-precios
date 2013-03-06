@@ -1,0 +1,7 @@
+%tr.price.error{ data: { id: new_price.id } }
+  %td= new_price.company
+  %td= new_price.store
+  %td= new_price.product
+  %td= number_to_currency new_price.value
+  %td= new_price.id.generation_time.strftime("%d %b %y")
+  %td= new_price.ip

@@ -1,1 +1,1 @@
-$('#prices').prepend('<%= j(render @prices) %>');
+$('<%= j(render partial: 'new_price', collection: @prices) %>').hide().prependTo('#prices').fadeIn(2000);
