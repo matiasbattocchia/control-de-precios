@@ -8,7 +8,9 @@
   .text
     %p
       Los precios relevados son agregados a esta lista. La lista se actualiza automáticamente.
-      Para relevar el precio de un producto su correspondiente código QR debe ser escaneado.
+      Para relevar el precio de un producto su correspondiente <a href="http://es.wikipedia.org/wiki/Código_QR">código QR</a> debe ser escaneado.
+    %p
+      Leer los <a href='https://docs.google.com/document/d/1Zuq-mQm31NIPD-u1Sd-YeziduKBs3EfwL-cAK2Mf_5w/pub'>detalles de la propuesta</a>.
     %p
       <i>El botón a continuación permite generar el código QR de un producto.</i>
     
@@ -26,3 +28,9 @@
       %th IP
   %tbody#prices
     = render @prices
+
+#footer
+  %p
+    Por <a>Matías Battocchia</a> y <a>Gonzalo Flores Kemec</a>.
+  %p
+    <b>Importante:</b> Los precios que figuran en el sitio <b>no son reales</b>, estos son creados e ingresados al sistema por sus usuarios con fines demostrativos.

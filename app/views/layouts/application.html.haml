@@ -6,7 +6,12 @@
     = csrf_meta_tags
 
   %body
-    .container-fluid
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          = link_to 'Control de Precios Ciudadano', './list.html', class: 'brand'
+
+    .container
       .row-fluid
         .span12
           = yield
