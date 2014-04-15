@@ -10,7 +10,7 @@ gem 'mongoid' #, git: 'git://github.com/mongoid/mongoid.git'
 gem 'bson_ext'
 gem 'rqrcode-rails3'
 gem 'simple_form'
-gem 'turbolinks'
+#gem 'turbolinks'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -29,6 +29,8 @@ group :development do
 end
 
 gem 'jquery-rails'
+
+gem 'puma'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

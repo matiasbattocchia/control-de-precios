@@ -27,7 +27,7 @@ class PricesController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.svg { render qrcode: "http://precios.lainventoria.com.ar/submit?c=#{@price.company}&s=#{@price.store}&p=#{@price.product}&v=#{@price.value}", unit: 3, level: :h }
+      format.svg { render qrcode: "http://198.211.97.159:2015/submit?c=#{@price.company}&s=#{@price.store}&p=#{@price.product}&v=#{@price.value}", unit: 3, level: :h }
     end
   end
 end
